@@ -49,7 +49,13 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroBg} alt="Smart city technology" className="w-full h-full object-cover" width={1920} height={1080} />
+          <img
+            src={heroBg}
+            alt="Smart city technology"
+            className="w-full h-full object-cover"
+            width={1920}
+            height={1080}
+          />
           <div className="absolute inset-0 hero-overlay opacity-85" />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,hsl(195_90%_50%/0.15),transparent_60%)]" />
         </div>
@@ -77,7 +83,8 @@ const Index = () => {
               transition={{ delay: 0.2, duration: 0.7 }}
               className="mt-6 text-lg md:text-xl text-primary-foreground/70 max-w-xl leading-relaxed"
             >
-              Cutting-edge solutions across governance, education, enterprise, and cybersecurity — purpose-built for Africa's institutions.
+              Cutting-edge solutions across governance, education, enterprise,
+              and cybersecurity purpose-built for Africa.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -86,13 +93,20 @@ const Index = () => {
               className="mt-8 flex flex-wrap gap-4"
             >
               <Link to="/contact">
-                <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-semibold text-base px-8">
+                <Button
+                  size="lg"
+                  className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-semibold text-base px-8"
+                >
                   Get Started
                   <ChevronRight className="ml-1 w-4 h-4" />
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-heading font-semibold text-base px-8">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-semibold text-base px-8"
+                >
                   Contact Us
                 </Button>
               </Link>
@@ -120,14 +134,21 @@ const Index = () => {
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
                   <s.icon className="w-6 h-6 text-accent" />
                 </div>
-                <h3 className="font-heading font-semibold text-lg text-foreground mb-2">{s.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
+                <h3 className="font-heading font-semibold text-lg text-foreground mb-2">
+                  {s.title}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {s.desc}
+                </p>
               </motion.div>
             ))}
           </div>
           <div className="text-center mt-10">
             <Link to="/services">
-              <Button variant="outline" className="font-heading border-accent text-accent hover:bg-accent/5">
+              <Button
+                variant="outline"
+                className="font-heading border-accent text-accent hover:bg-accent/5"
+              >
                 View All Services <ChevronRight className="ml-1 w-4 h-4" />
               </Button>
             </Link>
@@ -156,7 +177,9 @@ const Index = () => {
                 <div className="w-14 h-14 rounded-xl bg-accent/15 flex items-center justify-center mx-auto mb-4">
                   <s.icon className="w-7 h-7 text-accent" />
                 </div>
-                <h3 className="font-heading font-semibold text-primary-foreground mb-2">{s.title}</h3>
+                <h3 className="font-heading font-semibold text-primary-foreground mb-2">
+                  {s.title}
+                </h3>
                 <p className="text-primary-foreground/60 text-sm">{s.desc}</p>
               </motion.div>
             ))}
@@ -176,11 +199,23 @@ const Index = () => {
                 Integrated School Management System
               </h2>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                Our most innovative in-house solution — a fully integrated system powered by RFID technology, purpose-built to transform how African schools operate.
+                Our most innovative in-house solution — a fully integrated
+                system powered by RFID technology, purpose-built to transform
+                how African schools operate.
               </p>
               <ul className="space-y-3 mb-8">
-                {["RFID Student Tracking", "Smart Attendance", "GPS Transport Monitoring", "Finance & Payments", "Academic Management", "Parent Communication"].map((f) => (
-                  <li key={f} className="flex items-center gap-3 text-sm text-foreground">
+                {[
+                  "RFID Student Tracking",
+                  "Smart Attendance",
+                  "GPS Transport Monitoring",
+                  "Finance & Payments",
+                  "Academic Management",
+                  "Parent Communication",
+                ].map((f) => (
+                  <li
+                    key={f}
+                    className="flex items-center gap-3 text-sm text-foreground"
+                  >
                     <div className="w-2 h-2 rounded-full bg-accent" />
                     {f}
                   </li>
@@ -198,7 +233,14 @@ const Index = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
             >
-              <img src={schoolSystem} alt="School Management System Dashboard" loading="lazy" className="rounded-2xl shadow-2xl w-full" width={1200} height={800} />
+              <img
+                src={schoolSystem}
+                alt="School Management System Dashboard"
+                loading="lazy"
+                className="rounded-2xl shadow-2xl w-full"
+                width={1200}
+                height={800}
+              />
             </motion.div>
           </div>
         </div>
@@ -220,13 +262,17 @@ const Index = () => {
                 className="glass-card p-8 rounded-xl"
               >
                 <Quote className="w-8 h-8 text-accent/30 mb-4" />
-                <p className="text-foreground leading-relaxed mb-6 italic">"{t.quote}"</p>
+                <p className="text-foreground leading-relaxed mb-6 italic">
+                  "{t.quote}"
+                </p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center">
                     <Star className="w-4 h-4 text-accent" />
                   </div>
                   <div>
-                    <p className="font-heading font-semibold text-sm text-foreground">{t.name}</p>
+                    <p className="font-heading font-semibold text-sm text-foreground">
+                      {t.name}
+                    </p>
                     <p className="text-xs text-muted-foreground">{t.role}</p>
                   </div>
                 </div>
@@ -246,17 +292,31 @@ const Index = () => {
           >
             Ready to Transform Your Institution?
           </motion.h2>
-          <motion.p {...fadeUp} className="mt-4 text-lg text-primary-foreground/70 max-w-xl mx-auto">
-            Partner with NexGov and join Africa's digital transformation journey.
+          <motion.p
+            {...fadeUp}
+            className="mt-4 text-lg text-primary-foreground/70 max-w-xl mx-auto"
+          >
+            Partner with NexGov and join Africa's digital transformation
+            journey.
           </motion.p>
-          <motion.div {...fadeUp} className="mt-8 flex flex-wrap justify-center gap-4">
+          <motion.div
+            {...fadeUp}
+            className="mt-8 flex flex-wrap justify-center gap-4"
+          >
             <Link to="/contact">
-              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-semibold px-8">
+              <Button
+                size="lg"
+                className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-semibold px-8"
+              >
                 Partner With Us
               </Button>
             </Link>
             <Link to="/about">
-              <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-heading px-8">
+              <Button
+                size="lg"
+                variant="outline"
+                className="bg-accent text-accent-foreground hover:bg-accent/90 font-heading font-semibold px-8"
+              >
                 Learn More
               </Button>
             </Link>
